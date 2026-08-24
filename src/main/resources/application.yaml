@@ -4,15 +4,21 @@ server:
 spring:
   application:
     name: config-server
+  profiles:
+    active: native
   cloud:
     config:
       server:
         git:
           uri: https://github.com/Seenathul-Ilma/librasys-config-server
+          search-paths:
+            - src/main/resources/configurations
+            - src/main/resources/configurations/services
+            - src/main/resources/configurations/platforms
         native:
           search-locations:
             - classpath:/configurations
-            - classpath:/configurations/platform
+            - classpath:/configurations/platforms
             - classpath:/configurations/services
 
 eureka:

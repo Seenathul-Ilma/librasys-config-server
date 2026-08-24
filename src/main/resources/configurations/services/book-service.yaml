@@ -6,12 +6,12 @@ spring:
     mongodb:
       host: localhost
       port: 27017
-      database: book_service_db
+      database: librasys_book_service_db
 
 servlet:
   multipart:
     max-file-size: 10MB
     max-request-size: 10MB
 
-#gcs:
-  #bucket-name: my-book-covers-bucket
+gcs:
+  bucket-name: librasys-book-covers
