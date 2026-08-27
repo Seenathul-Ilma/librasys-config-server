@@ -51,8 +51,8 @@ Each service is configured with `spring.config.import=configserver:http://localh
 
 ### Build
 ```bash
-git clone https://github.com/Seenathul-Ilma/config-server.git
-cd config-server
+git clone https://github.com/Seenathul-Ilma/librasys-config-server.git
+cd librasys-config-server
 mvn clean package -DskipTests
 ```
 
